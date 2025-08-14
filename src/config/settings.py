@@ -60,6 +60,12 @@ class Settings:
     # with `page_content` JSON that we flatten in-app).
     db_table_raw_sections: str = os.getenv("DB_TABLE_RAW_SECTIONS", "lesson_dirty")
 
+    # Classifier (Step 3) configuration
+    classifier_use_llm_fallback: bool = os.getenv("CLASSIFIER_USE_LLM_FALLBACK", "true").lower() in {"1", "true", "yes"}
+    classifier_score_threshold: float = float(os.getenv("CLASSIFIER_SCORE_THRESHOLD", "0.55"))
+    classifier_margin_threshold: float = float(os.getenv("CLASSIFIER_MARGIN_THRESHOLD", "0.10"))
+    classifier_max_llm_calls_per_section: int = int(os.getenv("CLASSIFIER_MAX_LLM_CALLS_PER_SECTION", "3"))
+
 
 @lru_cache(maxsize=1)
 def get_settings() -> Settings:

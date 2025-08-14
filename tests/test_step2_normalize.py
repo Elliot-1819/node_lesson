@@ -12,3 +12,11 @@ def test_normalize_and_split_exact_dedupe():
     assert "another line." in out
 
 
+def test_split_on_newlines_and_bullets():
+    text = "- First item\n- Second item\nThird line without punctuation"
+    out = normalize_and_split(text)
+    assert any("first item" in s for s in out)
+    assert any("second item" in s for s in out)
+    assert any("third line without punctuation" in s for s in out)
+
+

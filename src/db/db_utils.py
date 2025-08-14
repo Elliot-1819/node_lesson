@@ -29,7 +29,7 @@ def fetch_pending_sections(limit: int = 10) -> List[RawSection]:
         SELECT serial_id AS page_id,
                page_title,
                topic,
-               _key_words,
+               page_key_words,
                page_content
         FROM {table}
         ORDER BY serial_id ASC

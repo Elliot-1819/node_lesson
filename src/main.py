@@ -71,15 +71,43 @@ def cli_step2(in_path: Path = typer.Option(..., exists=True, help="Path to step1
 
 @app.command("step3")
 def cli_step3(in_path: Path = typer.Option(..., exists=True, help="Path to step2_sentences.json"),
-              out_path: Path = typer.Option(..., help="Where to write step3_labeled.json")) -> None:
+              out_path: Path = typer.Option(..., help="Where to write step3_labeled.json"),
+              context_path: Path = typer.Option(Path('.out/step1_sections.json'), exists=False, help="Optional: path to step1 sections for keywords"),
+              no_llm: bool = typer.Option(False, help="Disable LLM fallback for classification")) -> None:
     from cli.artifacts import read_json, write_json
     from pipeline.step3_label import label_sentences
+    from config.settings import get_settings
 
     data = read_json(in_path)
+    section_id = data.get("section_id") if isinstance(data, dict) else None
     sentences = data.get("sentences", []) if isinstance(data, dict) else data
-    labeled = label_sentences(sentences)
-    # expand classifications into dicts
-    result = [{"text": t, "label": c.label, "probability": c.probability, "rule_hit": c.rule_hit} for t, c in labeled]
+
+    # Load section keywords if context is provided and section_id is known
+    section_keywords = None
+    if section_id and context_path.exists():
+        try:
+            ctx = read_json(context_path)
+            for rec in ctx:
+                if int(rec.get("section_id")) == int(section_id):
+                    section_keywords = rec.get("keywords")
+                    break
+        except Exception:
+            section_keywords = None
+
+    # Optionally disable LLM fallback
+    settings = get_settings()
+    if no_llm:
+        object.__setattr__(settings, 'classifier_use_llm_fallback', False)  # type: ignore
+
+    labeled = label_sentences(sentences, section_keywords=section_keywords)
+    result = [{
+        "section_id": section_id,
+        "text": t,
+        "label": c.label,
+        "probability": c.probability,
+        "rule_hit": c.rule_hit,
+        "source": c.source,
+    } for t, c in labeled]
     write_json(out_path, result)
     typer.echo(f"Wrote labeled: {len(result)} → {out_path}")
 
