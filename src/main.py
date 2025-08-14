@@ -114,14 +114,42 @@ def cli_step3(in_path: Path = typer.Option(..., exists=True, help="Path to step2
 
 @app.command("step4")
 def cli_step4(in_path: Path = typer.Option(..., exists=True, help="Path to step2_sentences.json"),
-              out_path: Path = typer.Option(..., help="Where to write step4_scores.json")) -> None:
+              out_path: Path = typer.Option(..., help="Where to write step4_scores.json"),
+              context_path: Path = typer.Option(Path('.out/step1_sections.json'), exists=False, help="Optional: path to step1 sections for keywords"),
+              labeled_path: Path = typer.Option(Path('.out/step3_labeled.json'), exists=False, help="Optional: path to step3 labeled for priors")) -> None:
     from cli.artifacts import read_json, write_json
     from pipeline.step4_score import score_sentences
 
     data = read_json(in_path)
+    section_id = data.get("section_id") if isinstance(data, dict) else None
     sentences = data.get("sentences", []) if isinstance(data, dict) else data
-    scores = score_sentences(sentences)
-    write_json(out_path, [{"text": s.text, "score": s.score} for s in scores])
+
+    # Optional context: keywords and labeled
+    section_keywords = None
+    if section_id and context_path.exists():
+        try:
+            ctx = read_json(context_path)
+            for rec in ctx:
+                if int(rec.get("section_id")) == int(section_id):
+                    section_keywords = rec.get("keywords")
+                    break
+        except Exception:
+            section_keywords = None
+
+    labeled = None
+    if labeled_path.exists():
+        try:
+            labeled = read_json(labeled_path)
+        except Exception:
+            labeled = None
+
+    scores = score_sentences(
+        sentences,
+        section_id=section_id,
+        section_keywords=section_keywords,
+        labeled=labeled,
+    )
+    write_json(out_path, scores)
     typer.echo(f"Wrote scores: {len(scores)} → {out_path}")
 
 
