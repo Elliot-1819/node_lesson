@@ -1,0 +1,79 @@
+[
+  {
+    "id": "definition_tim_3p",
+    "name": "Definition — 3rd Person (Tim)",
+    "info_type": "Definition",
+    "slots": {
+      "lead_in": "Tim is learning about {term}. Watch as he discovers what it means...",
+      "definition": "{definition_text}",
+      "conclusion": "Tim now understands {term}. You can apply this same understanding when {application}..."
+    },
+    "render_hints": {
+      "voice": "3rd_person",
+      "style": "narrative",
+      "interactive": "follow_tim"
+    }
+  },
+  {
+    "id": "mechanism_2p_view",
+    "name": "Mechanism — 2nd Person View",
+    "info_type": "Mechanism",
+    "slots": {
+      "lead_in": "You're about to see exactly how {process} works step by step...",
+      "steps": ["{step_1}", "{step_2}", "{step_3}"]
+    },
+    "render_hints": {
+      "voice": "2nd_person",
+      "style": "guided_walkthrough",
+      "interactive": "you_control_steps"
+    }
+  },
+  {
+    "id": "procedure_decision_tree",
+    "name": "Procedure — Decision Tree",
+    "info_type": "Procedure",
+    "slots": {
+      "lead_in": "Each trading procedure has decision points. Choose your path...",
+      "steps": ["{step_1}", "{step_2}", "{step_3}"]
+    },
+    "render_hints": {
+      "voice": "2nd_person",
+      "style": "branching",
+      "interactive": "decision_tree"
+    }
+  },
+  {
+    "id": "comparison_game",
+    "name": "Comparison — Game",
+    "info_type": "Comparison",
+    "slots": {
+      "lead_in": "Two approaches compete. Test both and see which wins...",
+      "option_a": "{option_a}",
+      "option_b": "{option_b}",
+      "conclusion": "You've tested both. Choose A when {when_a}... Choose B when {when_b}..."
+    },
+    "render_hints": {
+      "voice": "2nd_person",
+      "style": "simulation",
+      "interactive": "scenario_simulation"
+    }
+  },
+  {
+    "id": "example_tim_3p",
+    "name": "Example — 3rd Person (Tim)",
+    "info_type": "Example",
+    "slots": {
+      "lead_in": "Tim just encountered this exact situation. See what happens...",
+      "scenario": "{scenario}",
+      "outcome": "{outcome}",
+      "lesson": "Tim's experience shows you {key_insight}. Watch for this pattern when {context}..."
+    },
+    "render_hints": {
+      "voice": "3rd_person",
+      "style": "narrative",
+      "interactive": "follow_tim"
+    }
+  }
+]
+
+

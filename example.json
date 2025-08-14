@@ -1,0 +1,201 @@
+[
+    {
+      "page_serial_id": 1,
+      "page_title": "US Perpetual-Style Futures 101",
+      "page_key_words": [
+        "Coinbase",
+        "Coinbase Derivatives",
+        "US Perpetual-Style Futures",
+        "perpetual futures",
+        "long-dated futures",
+        "5-year expiration",
+        "24/7 trading",
+        "funding rate",
+        "mark price",
+        "spot-like pricing",
+        "leverage",
+        "10x intraday leverage",
+        "contract size",
+        "nano bitcoin",
+        "BIP",
+        "US regulated market",
+        "crypto derivatives",
+        "rolling avoidance",
+        "counterparty risk",
+        "custody risk"
+      ],
+      "page_content": [
+        {
+          "section_serial_id": 1,
+          "section_title": "US Perpetual-Style Futures 101",
+          "text": "by Coinbase Derivatives LLC In this article, well introduce US Perpetual-Style Futures, a new kind of futures contract that brings the benefits of international perpetual futures to a US regulated market. Well break down the key components, how these contracts work, and how they compare to traditional futures contracts.",
+          "is_text_relevant": true,
+          "topic": "Crypto Trading",
+          "section_key_words": [
+            "overview",
+            "Coinbase Derivatives LLC",
+            "US regulated market",
+            "perpetual futures benefits",
+            "contract components",
+            "how it works",
+            "comparison to traditional futures"
+          ]
+        },
+        {
+          "section_serial_id": 2,
+          "section_title": "What are US Perpetual-Style Futures?",
+          "text": "US Perpetual-Style Futures are a new kind of futures contract offered by Coinbase Derivatives. They are long-dated futures contracts (five year expirations) that closely track the underlying asset's spot price. These contracts trade 24/7 and are designed to bring the core benefits of international perpetual futures to a US-regulated environment. International perpetual futures allow traders to speculate on the price of an asset without an expiration date, while closely tracking the asset's spot price. They are largely unavailable in the US due to regulatory restrictions but are widely traded internationally. Perpetual futures represent more than 90% of global crypto derivatives volume. Major exchanges operating outside of the US have consistently reported daily trading volumes exceeding $50 billion for perpetual futures. Demand for this product in the US is strong. Some US-based traders access perpetual futures through offshore exchanges, an approach that introduces regulatory, custody, and counterparty risks. US Perpetual-Style Futures eliminate the need for offshore workarounds, offering traders a domestic, regulated alternative with the same utility.",
+          "is_text_relevant": true,
+          "topic": "Crypto Trading",
+          "section_key_words": [
+            "definition",
+            "long-dated futures",
+            "5-year expiry",
+            "tracks spot price",
+            "24/7 trading",
+            "international vs US availability",
+            "regulatory restrictions",
+            "market volume >$50B daily",
+            "90% derivatives share",
+            "offshore exchange risk",
+            "domestic regulated alternative"
+          ]
+        },
+        {
+          "section_serial_id": 3,
+          "section_title": "How do US Perpetual-Style Futures work?",
+          "text": "US Perpetual-Style Futures are designed as long-dated futures contracts (5 year expirations) with 24/7 trading. The contracts incorporate a funding rate mechanism to keep futures prices closely aligned with underlying spot markets: - Funding accrues hourly and is settled twice daily during designated cash adjustment periods. - At each settlement period, accrued funding is aggregated and credited or debited to traders' accounts. - These mechanics enable a spot-like trading experience with the advantages of leveraged futures tax treatment. - Funding accrues hourly and is settled twice daily during designated cash adjustment periods. Funding accrues hourly and is settled twice daily during designated cash adjustment periods. - At each settlement period, accrued funding is aggregated and credited or debited to traders' accounts. At each settlement period, accrued funding is aggregated and credited or debited to traders' accounts. - These mechanics enable a spot-like trading experience with the advantages of leveraged futures tax treatment. These mechanics enable a spot-like trading experience with the advantages of leveraged futures tax treatment. US Perpetual-Style Futures have set contract sizes. For example, each nano Bitcoin Perpetual-Style Futures contract represents 1/100th of a Bitcoin. This differs from international perpetual futures, where investors can enter positions for any amount above the minimum - there are no set contract sizes. US Perpetual-Style Futures additionally offer up to 10x intraday leverage, enabling traders to amplify their exposure with limited capital.",
+          "is_text_relevant": true,
+          "topic": "Crypto Trading",
+          "section_key_words": [
+            "mechanics",
+            "funding rate",
+            "hourly accrual",
+            "twice-daily settlement",
+            "cash adjustment period",
+            "mark price alignment",
+            "leveraged futures tax treatment",
+            "fixed contract size",
+            "nano bitcoin 1/100 BTC",
+            "10x intraday leverage",
+            "spot-like experience"
+          ]
+        },
+        {
+          "section_serial_id": 4,
+          "section_title": "How are these contracts different from traditional futures contracts?",
+          "text": "US Perpetual-Style Futures are designed to function like global perpetual futures. In traditional futures markets, contracts have monthly or quarterly expirations. Traders must either close their position or roll it into a new contract before it expires. This creates operational complexity, especially for longer-term strategies. US Perpetual-Style Futures have five year expirations, making it easier for traders to hold positions without needing to roll. US Perpetual-Style Futures additionally offer traders a way to track price movements 24/7 by closely mirroring spot prices through a funding rate mechanism. Traditional futures contracts have forward looking prices that may deviate from spot prices. By combining long-dated contracts with a funding mechanism, US Perpetual-Style Futures offer a \"spot-like\" trading experience while retaining all the features traders expect from derivatives—such as leverage and risk management.",
+          "is_text_relevant": true,
+          "topic": "Crypto Trading",
+          "section_key_words": [
+            "comparison",
+            "traditional futures",
+            "monthly/quarterly expirations",
+            "rolling positions",
+            "operational complexity",
+            "5-year expiry advantage",
+            "24/7 price tracking",
+            "forward curve vs spot",
+            "funding mechanism",
+            "risk management",
+            "leverage"
+          ]
+        },
+        {
+          "section_serial_id": 5,
+          "section_title": "Trading example",
+          "text": "An investor enters a long position in 1 nano Bitcoin Perpetual-Style Future (BIP) at a price of $100,000 at 1:30 PM ET. The trader holds the contract through the 2:00 PM ET funding period and sells it at a price of $101,000 at 2:30 PM ET. At the 2:00 PM ET funding period, the funding rate for the hour is +0.010% and the mark price for the hour is $100,000. A funding debit of $1.00 (1 contract × 0.01 contract size × $100,000 mark price × 0.010% funding rate) is accrued for this hour. At the end of day, the final funding debit or credit is calculated using the latest mark price, and all accrued funding payments are processed. Investors can trade our US Perpetual-Style Futures on our partner platforms now.",
+          "is_text_relevant": true,
+          "topic": "Crypto Futures Trading",
+          "section_key_words": [
+            "worked example",
+            "BIP contract",
+            "entry price $100,000",
+            "exit price $101,000",
+            "funding +0.010%",
+            "mark price $100,000",
+            "funding debit $1.00",
+            "calculation formula",
+            "end-of-day settlement",
+            "partner platforms"
+          ]
+        },
+        {
+          "section_serial_id": 6,
+          "section_title": "Recap",
+          "text": "US Perpetual-Style Future A type of long-dated futures contract offered by Coinbase Derivatives that closely tracks the underlying asset’s spot price. A type of futures contract tradeable internationally without a fixed expiration date that closely tracks the underlying asset’s spot price. A periodic payment between long and short positions designed to keep futures prices aligned with spot markets. The ability to control a large position with a relatively small amount of capital (margin). The deposit required to open and maintain a position in a futures contract. A calculated reference price that represents the estimated fair value of a futures contract. The risk of loss in trading futures can be substantial. You should, therefore, carefully consider whether such trading is suitable for you in light of your circumstances and financial resources. - What are US Perpetual-Style Futures? - How do they work? - How are they different? - Trading example - Recap - What are US Perpetual-Style Futures? - How do they work? - How are they different? - Trading example - Recap A selection of cryptocurrencies in the top 50 by market cap.",
+          "is_text_relevant": true,
+          "topic": "Crypto Futures Trading",
+          "section_key_words": [
+            "glossary",
+            "funding rate definition",
+            "leverage",
+            "margin",
+            "mark price",
+            "risk disclosure",
+            "summary bullets",
+            "top 50 cryptocurrencies",
+            "key questions recap"
+          ]
+        }
+      ],
+      "url": "https://www.coinbase.com/learn/futures/us-perpetual-style-futures-101",
+      "topic": "Crypto Futures Trading",
+      "drop_triggereed_at": 6
+    },
+    {
+      "page_serial_id": 2,
+      "page_title": "What is a depth chart?",
+      "page_key_words": [
+        "depth chart",
+        "order book",
+        "bid-ask spread",
+        "mid-market price",
+        "buy wall",
+        "sell wall",
+        "liquidity",
+        "market depth",
+        "limit orders",
+        "bids",
+        "asks"
+      ],
+      "page_content": [
+        {
+          "section_serial_id": 1,
+          "section_title": "What is a depth chart?",
+          "text": "Part of our guide to Advanced Trading, tools and features to help you take greater control of your portfolio. A depth chart is a visual representation of the information in the order book. Learning to read depth charts is a useful skill, because they’re an excellent tool for getting a quick sense of what’s happening in a market. When people talk about “depth,” they’re referring to the supply of an asset — the total amount available to buy and sell at each price point. In general, the more buy and sell limit orders there are for a given asset across prices, the “deeper” the market is considered to be. - You can think of the depth chart as the order book, but flipped on its side. On the x-axis, you’ll see price points, increasing from left to right. On the y-axis, you'll find the total amount of, say, bitcoin available to buy or sell, increasing from bottom to top. - Just like the order book, the depth chart has a buy side and sell side. The green bid line shows the total value of the bids, or buy orders. And the red ask line shows the total value of the asks, or sell orders. In the middle, you’ll see the current mid-market price, along with the spread — the gap between the highest bid and lowest ask. - Experienced traders look for familiar patterns in these charts, and use them to make educated guesses about where the market might move next. For example, steep cliff-like patterns are known as walls. On the buy side, they’re called buy walls, and on the sell side, they’re called sell walls. - Walls can indicate that a lot of people want to buy or sell at a specific price, and they can act like literal barriers to price movement. Buy walls can mean that an asset has support at a given price — a very large buy order, for example, or lots of people looking to buy can keep prices from going down. And sell walls can show resistance at that price — a large sell order or lots of people looking to sell could block prices from going up. Like any chart or indicator, the depth chart provides one of many perspectives for analyzing crypto markets, forming an opinion on where prices are headed next, and deciding the price of your next trade.",
+          "is_text_relevant": true,
+          "topic": "Crypto Trading",
+          "section_key_words": [
+            "order book visualization",
+            "x-axis price",
+            "y-axis cumulative quantity",
+            "bid line (green)",
+            "ask line (red)",
+            "mid-market price",
+            "spread",
+            "market patterns",
+            "buy walls",
+            "sell walls",
+            "support and resistance"
+          ]
+        },
+        {
+          "section_serial_id": 2,
+          "section_title": "Disclosure",
+          "text": "Coinbase offers simple and advanced trading. Advanced trading is for experienced traders and is subject to the Trading Rules. Fees on the two platforms vary. Content is for informational purposes and is not investment advice. Investing in crypto comes with risk.",
+          "is_text_relevant": false,
+          "topic": "promotion",
+          "section_key_words": [
+            "trading rules",
+            "fees vary",
+            "informational only",
+            "investment risk disclaimer"
+          ]
+        }
+      ],
+      "url": "https://www.coinbase.com/learn/advanced-trading/what-is-a-depth-chart",
+      "topic": "Crypto Trading",
+      "drop_triggereed_at": 6
+    } 
+]

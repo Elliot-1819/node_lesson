@@ -1,0 +1,16 @@
+---
+description: Enforce explicit confirmation and full-context checks before edits or commands
+globs: []
+alwaysApply: true
+---
+
+# Editing and Execution Guardrails
+
+- Always confirm exactly what will be changed/added and why it is the best option, including expected impact.
+- Ensure ≥95% confidence before proceeding; if not, ask clarifying questions first.
+- Never act without explicit user confirmation for scope changes, new files, dependencies, configs, or commands.
+- Always search/read all potentially affected files and existing logic to get full context before editing.
+- Make minimal, reversible edits; avoid adding unused code, files, or artifacts.
+- Do not run steps or commands beyond the one requested; no side effects without approval.
+- Prefer structured logs for actions taken; surface errors and uncertainties immediately.
+
